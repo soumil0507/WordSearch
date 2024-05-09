@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <div class="navbar">
+            <h1 class="navbar-header">Word Search</h1>
+        </div>
+
+        <div class="landing-form">
+            <div class="logo-container">
+                <img  class="word-search-logo" src="public\word_search_logo.png" alt="Word-search-logo">
+            </div>
+            <div class="form-container">
+                <form action="" id="createMatrixForm">
+                    <div class="form-row">
+                        <label for="rows" class="form-label">Rows:</label>
+                        <input type="text" id="rows" name="rows" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="cols" class="form-label">Columns:</label>
+                        <input type="text" id="cols" name="cols" class="form-input" required>
+                    </div>
+                    <button type="submit" class="form-submit">Create Matrix</button>
+                </form>
+            </div>
+        </div>
+
+        <div id = "matrixContainer" class = "matrix-container">
+            <div id="matrix" class="matrix"></div>
+            
+            <div class="search-word">
+                <form action="" id="search-word-form" class="search-word-form">
+                    <div class="form-row">
+                        <label for="word" class="search-form-label">Search Word:</label>
+                        <input type="text" id="word" name="word" class="search-form-input" required>
+                    </div>
+                    <button type="submit" class="form-submit">Search</button>
+                </form>
+                <div class="found-container"></div>
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Welcome to Word Search!!
+                <br>
+                 <br>Our web app is inspired by Leetcode problem no. 79. Word Search.
+                 <br>Using the concept of Backtracking, our app allows users to search for words within a maze of letters. 
+                 <br>Users can input a word, and our app will navigate through the maze, seeking a path that matches the word. 
+                 <br>It's a fun and challenging way to exercise problem-solving skills while enjoying a word search game experience.</p>
+            </div>
+          </div>
+        
+    <script type="module" src="index.js"></script>
+</body>
+</html>
